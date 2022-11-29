@@ -1,9 +1,9 @@
 pipeline {
 	agent any 
 		stages{
-			stage('1-make a left'){
+			stage('checkout from version control'){
 				steps{
-				sh  'echo "walk.."'
+				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '8e554144-e3df-416e-ac98-9d989d0e4469', url: 'https://github.com/rnfor-pro/tem4_ci']]])
 				}
 			}
 			stage('2-make a right'){
