@@ -23,7 +23,7 @@ pipeline {
 			}
             stage('5-stop'){
 				steps{
-					sh 'echo "stopping now...."'
+					sh 'echo "stopping now......."'
 		}
 }
            stage('6-call mom'){
