@@ -26,3 +26,6 @@ pipeline {
 					sh 'echo "stopping...."'
 		}
 }
+
+        }
+}
