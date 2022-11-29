@@ -28,7 +28,7 @@ pipeline {
 }
            stage('6-call mom'){
 				steps{
-					sh 'echo "callinging mom right now ...."'
+					sh 'echo "callinging mom right now ........."'
                 }
            }
 
