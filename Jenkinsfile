@@ -8,7 +8,7 @@ pipeline {
 			}
 			stage('2-make a right'){
 				steps{
-					sh 'echo "walk..."'
+					sh 'bash -x /var/lib/jenkins/workspace/Practical-groovy/security.sh'
 				}
 			}
 			stage('3-make another left'){
